@@ -1,23 +1,23 @@
-package com.binary;
+package com.Binary;
 
-public class BinarySearchWithRecursion {
+public class BinarySearch {
     public static void main(String[] args) {
         int array[] = Input.inputArray();
         int target = Input.target();
-        int output = binarySearchWithRecursion(array, 0, array.length - 1, target);
+        int output = binarySearch(array, target);
         System.out.println(output);
-
     }
 
-    public static int binarySearchWithRecursion(int[] arr, int low, int high, int target) {
+    public static int binarySearch(int[] arr, int target) {
+        int low = 0, high = arr.length - 1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] == target)
                 return mid;
             else if (arr[mid] > target)
-                return binarySearchWithRecursion(arr, low, mid - 1, target);
+                high = mid - 1;
             else if (arr[mid] < target)
-                return binarySearchWithRecursion(arr, mid + 1, high, target);
+                low = mid + 1;
         }
         return -1;
     }

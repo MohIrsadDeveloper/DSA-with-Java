@@ -1,4 +1,4 @@
-package com.binary;
+package com.Binary;
 
 public class BinarySearchWithFloor {
     public static void main(String[] args) {

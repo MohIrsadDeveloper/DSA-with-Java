@@ -1,5 +1,5 @@
-import com.binary.BinarySearch;
-import com.binary.BinarySearchWithRecursion;
+import com.Binary.BinarySearch;
+import com.Binary.BinarySearchWithRecursion;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,5 +9,7 @@ public class Main {
         System.out.println(output);
         int output2 = BinarySearchWithRecursion.binarySearchWithRecursion(arr, 0, 4, 3);
         System.out.println(output2);
+
+
     }
 }

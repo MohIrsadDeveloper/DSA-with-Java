@@ -1,4 +1,4 @@
-package com.binary;
+package com.Binary;
 
 import java.util.Scanner;
 
