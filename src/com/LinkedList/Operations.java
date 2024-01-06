@@ -74,6 +74,7 @@ public class Operations {
     public static ListNode loopStart(ListNode head) {
         if (head == null)
             return null;
+
         boolean hasLoop = false;
         ListNode slow = head;
         ListNode fast = head;
