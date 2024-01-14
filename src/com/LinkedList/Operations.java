@@ -129,6 +129,15 @@ public class Operations {
         }
     }
 
+    public static ListNode cloneLinkedList(ListNode head) {
+        ListNode clone = head;
+        while (clone.getNext() != null) {
+
+        }
+
+        return clone;
+    }
+
     public static int length(ListNode head) {
         if (head == null)
             return 0;
