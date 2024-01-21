@@ -16,9 +16,11 @@ public class AnonymousInnerClass {
         wagoner.drive();
 
         // with anonymous function
-        Car wagoner1 = new Wagoner();
-        {
-            System.out.println("This is from anonymous method with inner class");
-        }
+        Car wagoner1 = new Wagoner() {
+            public void drive() {
+                System.out.println("This is from anonymous method with inner class");
+            }
+        };
+        wagoner1.drive();
     }
 }
